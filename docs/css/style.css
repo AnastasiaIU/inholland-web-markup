@@ -1,5 +1,5 @@
 .version-nav {
-  border: solid 5px red;
+  border-bottom: solid 1px black;
 }
 
 .button {
@@ -15,6 +15,10 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.button-pressed {
+  background-color: #c0c0c0;
 }
 
 .inline-block * {
