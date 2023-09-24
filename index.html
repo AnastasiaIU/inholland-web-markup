@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Istok+Web" />
+
+    <title>About Me</title>
+
+    <style>
+
+      body {
+        background-color: lightgray;
+      }
+
+      .page {
+        position: relative;
+        background-color: #199494;
+        width: 744px;
+        height: 1133px;
+        margin: auto;
+      }
+
+      header {
+        background-color: white;
+        width: 744px;
+        height: 140px;
+        border-bottom: 5px solid #E15714;
+      }
+
+      .it1b {
+        margin: 10px;
+        float: right;
+      }
+
+      .rounded-corners {
+        border-radius: 50px;
+      }
+
+      .image-with-frame {
+        position: absolute;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .frame {
+        position: absolute;
+        width: 304px;
+        height: 400px;
+        object-fit: cover;        
+      }
+
+      .image {
+        position: absolute;
+        width: 254px;
+        height: 350px;
+        object-fit: cover;
+        margin: 25px;
+      }
+
+      .text {
+        color: white;
+        font-family: "Istok Web";
+      }
+
+      .text-info {
+        font-size: 1.375em;
+      }
+
+      .basic-info-parent {
+        position: absolute;
+        right: 0px;
+        width: 311px;
+        height: 400px;
+        margin: 30px;
+        display: table;
+      }
+
+      .basic-info-content {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .text-about-me {
+        font-size: 1em;
+      }
+
+      .about-me {
+        position: absolute;
+        top: 600px;
+        width: 665px;
+        height: 500px;
+        margin-top: -16px;
+        margin-left: 50px;
+      }
+
+      span {
+        font-size: 1.375em;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <article class="page">
+      
+      <header role="banner">
+        <img src="img/it1b.jpg" class="it1b" />
+      </header>
+
+      <main role="main">
+      
+        <section class="image-with-frame">
+          <img src="img/flowers-frame.jpg" class="frame rounded-corners"/>
+          <img src="img/sia.jpg" class="image rounded-corners"/>
+        </section>
+
+        <section class="basic-info-parent">
+
+          <p class="basic-info-content text text-info">
+            <b>Name:</b><br />
+            Sia Iurashchuk<br />
+            <br />
+            <b>Age:</b><br />
+            29 y.o.<br />
+            <br />
+            <b>Previous education:</b><br />
+            Civil Engineering Bachelor
+          </p>
+
+        </section>
+
+        <section class="about-me">
+
+          <p class="text text-about-me">
+            <span><b>About me:</b></span><br />
+            I have had quite a diverse range of experiences in my life so far. As a child, I was a professional gymnast. The discipline and dedication I learned from gymnastics have stayed with me and helped shape who I am today.<br />
+            <br />
+            After my gymnastics days, I attended an art school where I explored various creative avenues. Interestingly, it was during this time that I realized my inclination toward technical skills, particularly in drafting shapes and designs, rather than traditional artistic expression.<br />
+            <br />
+            My academic journey led me to pursue a bachelor's degree in civil engineering, and I dedicated six years to this field. Working as a civil engineer provided me with invaluable experience in solving complex problems related to infrastructure projects. I also gained valuable experience in teamwork and learned how to communicate effectively with various project stakeholders.<br />
+            <br />
+            However, I have always had a passion for technology and programming, so I decided to pivot my career path. Currently, I'm pursuing a bachelor's degree in IT, immersing myself in the exciting world of technology, software development, and all digital things.<br />
+            <br />
+            Outside of my academic pursuits, I enjoy playing computer games casually, and I also have a passion for traditional creative activities like sewing and knitting.
+          </p>
+
+        </section>
+
+      </main>
+
+      <!--<footer role="complementary">
+
+        <p>BTW let's watch my vlog</p>
+
+      </footer>-->
+
+    </article>
+
+  </body>
+
+</html>
