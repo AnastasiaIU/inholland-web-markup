@@ -1,0 +1,33 @@
+h2 {
+  margin-left: 6px;
+}
+
+article {
+  outline: solid red;
+  margin: 8px;
+  padding: 8px;
+}
+
+p {
+  outline: solid blue;
+}
+
+.inline p {
+  display: inline;
+}
+
+.block p {
+  display: block;
+}
+
+.inline-block p {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex p {
+  margin: 6px;
+}
