@@ -1,4 +1,9 @@
-.hello-world {
-  color: magenta;
-  font-size: 24px;
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 20px;
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
 }
