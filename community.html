@@ -3,82 +3,412 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="running, the Hague, begginer, where to run, tips on running gear">
+    <meta name="description" content="Comprehensive resource for running in The Hague. Contains places to run, local running communities and events, tips on gear and local stores.">
+    <meta name="author" content="Anastasiia Iurashchuk">
     <title>The Hague Runners | Community</title>
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="./js/scripts.js"></script>
   </head>
   
   <body>    
     
     <header>
 
+      <nav role="navigation" id="mobile-menu">        
+        <a><img id="menu-icon" src="./img/mobile-menu.svg" onclick="openMenu()" /></a>
+        <ul id="mobile-menu-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./run-in-the-hague.html">Where to Run</a></li>
+          <li><a href="./community.html">Community</a></li>
+          <li class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
+          <li class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
+          <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <section id="logo-header">
         <a href="./index.html"><img class="logo" src="./img/logo.svg" /></a>
-        <h1><a href="./index.html">The Hague Runners</a></h1>
+        <h1 id="website-name"><a href="./index.html">The Hague Runners</a></h1>
+        <h1 id="page-name"><a href="./index.html">Community</a></h1>
       </section>
 
-      <ul id="nav-bar">
-        <li class="nav-tab"><a href="./index.html">Home</a></li>
-        <li class="nav-tab"><a href="./run-in-the-hague.html">Where to Run</a></li>
-        <li id="current-page" class="nav-tab"><a href="./community.html">Community</a></li>
-        <li class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
-        <li class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
-        <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
-      </ul>
+      <nav role="navigation" id="menu">        
+        <ul id="menu-links">
+          <li class="nav-tab"><a href="./index.html">Home</a></li>
+          <li class="nav-tab"><a href="./run-in-the-hague.html">Where to Run</a></li>
+          <li id="current-page" class="nav-tab"><a href="./community.html">Community</a></li>
+          <li class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
+          <li class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
+          <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
+        </ul>        
+      </nav>
+
+      <a id="contact-icon-parent" href="./contact.html"><img id="contact-icon" src="./img/mobile-contact.svg" /></a>
+
+      <a id="close-icon-parent"><img id="close-icon" src="./img/mobile-cross.svg" onclick="closeMenu()" /></a>
       
     </header>
 
     <section id="content">
       
-      <section id="banner">
-        <img id="image-banner" src="./img/homepage-banner.jpg" />
-        <h1 id="heading-banner">
-          <span>Welcome to </span>
-          <span>The Hague Runners!</span>
-        </h1>
+      <h1 id="heading-1">Communities and events</h1>
+
+      <section class="content-container-community">
+
+        <h2><a href="https://www.parkrun.co.nl/zuiderpark/" target="_blank">Zuiderpark parkrun</a></h2>
+        
+        <section class="content-community">
+
+          <figure class="figure">
+            <img class="content-image community-image" src="./img/community-zuiderpark-parkrun.jpg" alt="Zuiderpark parkrun event" title="Zuiderpark parkrun">
+            <figcaption>Zuiderpark parkrun</figcaption>
+          </figure>
+
+          <article class="content-text community-text">
+            <ul>
+              <li>Free for everyone.</li>
+              <li>Every Saturday at 9:00am.</li>
+              <li><a href="https://www.parkrun.co.nl/zuiderpark/course/" target="_blank">5km</a> route.</li>
+              <li>Bring a barcode for results.</li>
+            </ul>
+            <p>
+              Zuiderpark parkrun is a weekly event that encapsulates the spirit of community running. 
+              Taking place every Saturday morning at 9:00am in Zuiderpark, this free 5km event welcomes everyone, 
+              regardless of their pace. Whether you're walking, jogging, or running, you'll find a supportive community here. 
+              And if you're interested, you can also volunteer to help organize the event. Following the run, 
+              participants often gather for coffee, making it not just a fitness event but also a social one. 
+              Just remember to register before your first run and bring a scannable barcode to get your results.
+            </p>
+          </article>
+
+        </section>
+
       </section>
 
-      <p id="p-intro">
-        This website is your comprehensive resource for running in the Hague. 
-        Whether you're looking for <a href="https://www.w3schools.com/" target="_blank">places to run</a>, join a local running community, 
-        or find specialized businesses that cater to your fitness needs, 
-        we're here to guide you every step of the way.
-      </p>
+      <section class="content-container-community">
 
-      <section class="content-container">        
+        <h2><a href="https://www.hagueroadrunners.nl/" target="_blank">The Hague Road Runners (HRR)</a></h2>
         
-        <img class="content-image" src="./img/homepage-image-content-1.jpg" />
+        <section class="content-community">
 
-        <article class="content-text">
-          <h2>What is the Purpose of This Website?</h2>
-          <p>
-            The sole mission of "The Hague Runners" is to be your <em>ultimate guide for running</em> in The Hague. 
-            We aim to be your go-to informational hub for everything running-related in the city – 
-            from discovering local running places to offering tips on gear and safety. 
-            The website helps you to find local running groups and events to make it easier for runners to meet 
-            and share their experiences. Also, we provide information about local shops offering running gear.
-          </p>
-        </article>
+          <figure class="figure">
+            <img class="content-image community-image" src="./img/community-hrr.jpg" alt="Participants of a HRR race" title="Participants of a HRR race">
+            <figcaption>Participants of a HRR race</figcaption>
+          </figure>
+
+          <article class="content-text community-text">
+            <ul>
+              <li>Weekly trainings.</li>
+              <li>Special events and group trips.</li>
+              <li>Any level of experience.</li>
+            </ul>
+            <p>
+              Welcome to a vibrant community of over 700 runners at The&nbsp;Hague&nbsp;Road&nbsp;Runners&nbsp;(HRR), 
+              one of the largest running clubs in the area. Whether you're a beginner looking for 
+              a 5km start or an advanced runner training for a marathon, HRR has a group for you. 
+              The club offers a variety of activities beyond road running, including trail running, 
+              Nordic walking, and hiking. Trainings take place multiple times a week, and the club 
+              also organizes special events and group trips. Located near Clingendael Park, the clubhouse 
+              features amenities like showers, changing rooms, and a cozy bar. And don't worry 
+              if you're not fluent in Dutch — the club accommodates <a href="https://www.hagueroadrunners.nl/hrr-in-english/" target="_blank">English</a> speakers as well.
+            </p>
+          </article>
+
+        </section>
 
       </section>
 
-      <section class="content-container">        
+      <section class="content-container-community">
+
+        <h2><a href="https://www.nncpcloopdenhaag.com/" target="_blank">CPC Loop Den Haag</a></h2>
         
-        <img class="content-image" src="./img/homepage-image-content-2.jpg" />
+        <section class="content-community">
 
-        <article class="content-text">
-          <h2>For Whom is This Website?</h2>
-          <p>
-            <span id="paragraph-1">
-            Whether you're a local or a visitor, a beginner or a marathon veteran, this website is for you. 
-            Here you'll find a community that understands your quest for that perfect run. 
-            If you're into health, fitness, socializing, or simply exploring the many facets of The Hague, 
-            we've got something that will make your runner's heart beat faster.
-            </span>
-            <span>So, <b>lace up your sneakers</b>, explore the site, and let "The Hague Runners" elevate your running game to the next level!</span>
-          </p>
-        </article>
+          <figure class="figure">
+            <img class="content-image community-image" src="./img/community-cpc-loop.jpg" alt="Marathon runners at the CPC Loop Den Haag" title="CPC Loop Den Haag">
+            <figcaption>Marathon runners</figcaption>
+          </figure>
 
+          <article class="content-text community-text">
+            <ul>
+              <li>A big event with history.</li>
+              <li>Hosted every year.</li>
+              <li>Amateurs and professionals.</li>
+            </ul>
+            <p>
+              Mark your calendars for mid-March and get ready for the CPC Loop Den Haag, 
+              an annual half marathon event that has been a tradition in The Hague since 1975. 
+              Known for its relatively flat course, the event is conducive to setting fast times, 
+              and it has even hosted record-breaking runs, such as Samuel Wanjiru's former 
+              men's half marathon world record set in 2007. The event is rich in history and has shifted 
+              from European dominance in its early years to featuring standout performances 
+              from African athletes in recent decades. Whether you're aiming to set a new personal record 
+              or simply enjoy the thrill of the race, the CPC Loop offers a competitive yet welcoming atmosphere for all.
+            </p>
+          </article>
+
+        </section>
+
+      </section>
+
+      <section id="table">
+
+        <h2 id="heading-2">Table of 2023/2024 events</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Distance</th>
+            </tr>
+          </thead>
+          <tbody>
+           <tr>
+              <th>Sunday, 17 September, 2023</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-sparta-loop/">1 of the 4 Sparta loop</a></th>
+              <th>5km and 10km</th>
+            </tr>
+            <tr>
+              <th>Saturday, 21 October, 2023</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-haagse-tien/">1 of the 4 Haagse Tien</a></th>
+              <th>5km and 10km</th>
+            </tr>
+            <tr>
+              <th>Saturday, 11 November, 2023</th>
+              <th><a href="http://duinentrail.nl/">The Hague Dune Trail</a></th>
+              <th>14km</th>
+            </tr>
+            <tr>
+              <th>Sunday, 19 November, 2023</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-clingendaelcross-2/">Clingendaelcross</a></th>
+              <th>4.5km and 8.8km</th>
+            </tr>
+            <tr>
+              <th>Saturday, 9 December, 2023</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-duinrellcross/">1 of the 4 Uithofcross</a></th>
+              <th>4.5km and 9km</th>
+            </tr>
+            <tr>
+              <th>Saturday, 31 December, 2023</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-oliebollencross/">Oliebollencross</a></th>
+              <th>4.6km and 9.2km</th>
+            </tr>
+            <tr>
+              <th>Saturday, 20 January, 2024</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-nieuwjaarscross/">Westduincross</a></th>
+              <th>4km and 8.8km</th>
+            </tr>
+            <tr>
+              <th>Sunday, 28 January, 2024</th>
+              <th><a href="http://www.puinduinrun.nl/">Debris run</a></th>
+              <th>3.5km, 7km and 10.5km</th>
+            </tr>
+            <tr>
+              <th>Sunday, 11 February, 2024</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-kopjesloop/">1 of the 4 Kopjesloop</a></th>
+              <th>5km and 10km</th>
+            </tr>
+            <tr>
+              <th>Sunday, 10 March, 2024</th>
+              <th><a href="https://www.nncpcloopdenhaag.com/">CPC Loop Den Haag</a></th>
+              <th>14.5km</th>
+            </tr>
+            <tr>
+              <th>Sunday, 24 March, 2024</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-hrr-1-van-de-4/">1 of the 4 HRR</a></th>
+              <th>5km and 10km</th>
+            </tr>
+          <tbody> 
+        </table>
+      
+      </section>
+
+      <section id="table-mobile">
+
+        <h2 id="heading-2">Table of 2023/2024 events</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-sparta-loop/">1 of the 4 Sparta loop</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Sunday, 17 September, 2023</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>5km and 10km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-haagse-tien/">1 of the 4 Haagse Tien</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Saturday, 21 October, 2023</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>5km and 10km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="http://duinentrail.nl/">The Hague Dune Trail</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Saturday, 11 November, 2023</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>14km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-clingendaelcross-2/">Clingendaelcross</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Sunday, 19 November, 2023</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>4.5km and 8.8km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-duinrellcross/">1 of the 4 Uithofcross</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Saturday, 9 December, 2023</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>4.5km and 9km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-oliebollencross/">Oliebollencross</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Saturday, 31 December, 2023</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>4.6km and 9.2km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-nieuwjaarscross/">Westduincross</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Saturday, 20 January, 2024</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>4km and 8.8km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="http://www.puinduinrun.nl/">Debris run</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Sunday, 28 January, 2024</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>3.5km, 7km and 10.5km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-kopjesloop/">1 of the 4 Kopjesloop</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Sunday, 11 February, 2024</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>5km and 10km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.nncpcloopdenhaag.com/">CPC Loop Den Haag</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Sunday, 10 March, 2024</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>14.5km</th>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th><a href="https://www.hagueroadrunners.nl/1-van-de-4-circuit/voorinschrijving-hrr-1-van-de-4/">1 of the 4 HRR</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Sunday, 24 March, 2024</th>
+            </tr>
+            <tr>
+              <th>Distance</th>
+              <th>5km and 10km</th>
+            </tr>
+          </tbody>
+        </table>
+      
       </section>
 
     </section>
@@ -107,6 +437,10 @@
         <li><a href="./run-in-the-hague.html">Places for running</a></li>
         <li><a href="./tips-on-gear.html">Tips on gear</a></li>
       </ul>
+
+      <section>
+        <p id="cookie">Cookie statement</p>
+      </section>
       
     </footer>
 

@@ -3,81 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Hague Runners | Tips and Tricks</title>
+    <meta name="keywords" content="running, the Hague, begginer, where to run, tips on running gear">
+    <meta name="description" content="Comprehensive resource for running in The Hague. Contains places to run, local running communities and events, tips on gear and local stores.">
+    <meta name="author" content="Anastasiia Iurashchuk">
+    <title>The Hague Runners | Tips on Gear</title>
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="./js/scripts.js"></script>
   </head>
   
   <body>    
     
     <header>
 
+      <nav role="navigation" id="mobile-menu">        
+        <a><img id="menu-icon" src="./img/mobile-menu.svg" onclick="openMenu()" /></a>
+        <ul id="mobile-menu-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./run-in-the-hague.html">Where to Run</a></li>
+          <li><a href="./community.html">Community</a></li>
+          <li class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
+          <li class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
+          <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <section id="logo-header">
         <a href="./index.html"><img class="logo" src="./img/logo.svg" /></a>
-        <h1><a href="./index.html">The Hague Runners</a></h1>
+        <h1 id="website-name"><a href="./index.html">The Hague Runners</a></h1>
+        <h1 id="page-name"><a href="./index.html">Tips on Gear</a></h1>
       </section>
 
-      <ul id="nav-bar">
-        <li class="nav-tab"><a href="./index.html">Home</a></li>
-        <li class="nav-tab"><a href="./run-in-the-hague.html">Where to Run</a></li>
-        <li class="nav-tab"><a href="./community.html">Community</a></li>
-        <li id="current-page" class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
-        <li class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
-        <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
-      </ul>
+      <nav role="navigation" id="menu">        
+        <ul id="menu-links">
+          <li class="nav-tab"><a href="./index.html">Home</a></li>
+          <li class="nav-tab"><a href="./run-in-the-hague.html">Where to Run</a></li>
+          <li class="nav-tab"><a href="./community.html">Community</a></li>
+          <li id="current-page" class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
+          <li class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
+          <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
+        </ul>        
+      </nav>
+
+      <a id="contact-icon-parent" href="./contact.html"><img id="contact-icon" src="./img/mobile-contact.svg" /></a>
+
+      <a id="close-icon-parent"><img id="close-icon" src="./img/mobile-cross.svg" onclick="closeMenu()" /></a>
       
     </header>
 
-    <section id="content">
+    <section id="content" class="tips">
       
-      <section id="banner">
-        <img id="image-banner" src="./img/homepage-banner.jpg" />
-        <h1 id="heading-banner">
-          <span>Welcome to </span>
-          <span>The Hague Runners!</span>
-        </h1>
-      </section>
+      <h1 id="heading-1">Tips on gear and safety</h1>
 
-      <p id="p-intro">
-        This website is your comprehensive resource for running in the Hague. 
-        Whether you're looking for <a href="https://www.w3schools.com/" target="_blank">places to run</a>, join a local running community, 
-        or find specialized businesses that cater to your fitness needs, 
-        we're here to guide you every step of the way.
-      </p>
+      <aside>
+        <h1>Key tips</h1>
+        <ol>
+          <li>Get a decent running shoes.</li>
+          <li>Get a good sports bra if needed.</li>
+          <li>Dress according to the season.</li>
+          <li>Follow basic safety rules.</li>
+          <li>Start slowly if beginner.</li>
+        </ol>
+      </aside>
 
-      <section class="content-container">        
+      <section id="content-tips">
+
+        <section class="content-container container-tips">        
+      
+          <img class="content-image" src="./img/tips-running-shoes.jpg" />
+
+          <article id="text-tips" class="content-text">
+            <h2>How to choose running shoes</h2>
+            <p>
+              Choosing the right pair of running shoes is crucial for comfort, performance, and injury prevention. 
+              When selecting your shoes, consider factors like your running style, the surface you'll be running on, and your foot type. 
+              A visit to a specialized running store can offer personalized advice, including a gait analysis to determine 
+              whether you need shoes with more stability or cushioning. Always try on multiple pairs and sizes, and if possible, 
+              test them on a treadmill or similar surface. Remember, the best running shoe for you is one 
+              that fits well and meets the specific needs of your running routine.
+            </p>
+          </article>
+
+        </section>
+
+        <section class="content-container container-tips">        
         
-        <img class="content-image" src="./img/homepage-image-content-1.jpg" />
+          <img class="content-image" src="./img/tips-safety.jpg" />
 
-        <article class="content-text">
-          <h2>What is the Purpose of This Website?</h2>
-          <p>
-            The sole mission of "The Hague Runners" is to be your <em>ultimate guide for running</em> in The Hague. 
-            We aim to be your go-to informational hub for everything running-related in the city – 
-            from discovering local running places to offering tips on gear and safety. 
-            The website helps you to find local running groups and events to make it easier for runners to meet 
-            and share their experiences. Also, we provide information about local shops offering running gear.
-          </p>
-        </article>
+          <article id="text-tips" class="content-text">
+            <h2>Tips on safety</h2>
+            <p>
+              Prioritizing safety is essential for any runner, whether you're a beginner or an experienced athlete. 
+              Always run in well-lit areas and stick to paths that are familiar and populated. 
+              Wear reflective clothing and gear if you're running in low-light conditions. Always listen to your body; 
+              if something feels off, don't push through the pain. It's advisable to carry some form of identification 
+              and a fully charged phone for emergency situations. Last but not least, inform someone about your running route and 
+              expected return time as an extra precaution. Taking these steps can go a long way in ensuring a safer running experience.
+            </p>
+          </article>
 
-      </section>
+        </section>
 
-      <section class="content-container">        
+        <section class="content-container container-tips">        
         
-        <img class="content-image" src="./img/homepage-image-content-2.jpg" />
+          <img class="content-image" src="./img/tips-seasons.jpg" />
 
-        <article class="content-text">
-          <h2>For Whom is This Website?</h2>
-          <p>
-            <span id="paragraph-1">
-            Whether you're a local or a visitor, a beginner or a marathon veteran, this website is for you. 
-            Here you'll find a community that understands your quest for that perfect run. 
-            If you're into health, fitness, socializing, or simply exploring the many facets of The Hague, 
-            we've got something that will make your runner's heart beat faster.
-            </span>
-            <span>So, <b>lace up your sneakers</b>, explore the site, and let "The Hague Runners" elevate your running game to the next level!</span>
-          </p>
-        </article>
+          <article id="text-tips" class="content-text">
+            <h2>Tips on weather seasons</h2>
+            <p>
+              In The Hague, seasonal changes can have a notable impact on your running experience. 
+              Summers offer long days and warm weather, making it ideal for early morning or late evening runs. 
+              However, the heat can be intense, so hydration and sun protection are key. 
+              Autumn brings cooler temperatures and colorful scenery, but also increased rainfall, 
+              so water-resistant gear may be necessary. Winters can be chilly and slippery, 
+              requiring layered clothing and caution on icy paths. 
+              Spring offers a pleasant balance of mild temperatures and blooming flora, 
+              though it's also a season where sudden showers are common. 
+              Adapting to these seasonal shifts is crucial for maintaining a consistent running routine in The Hague.
+            </p>
+          </article>
+
+        </section>
 
       </section>
 
@@ -107,6 +153,10 @@
         <li><a href="./run-in-the-hague.html">Places for running</a></li>
         <li><a href="./tips-on-gear.html">Tips on gear</a></li>
       </ul>
+
+      <section>
+        <p id="cookie">Cookie statement</p>
+      </section>
       
     </footer>
 

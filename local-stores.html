@@ -3,81 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="running, the Hague, begginer, where to run, tips on running gear">
+    <meta name="description" content="Comprehensive resource for running in The Hague. Contains places to run, local running communities and events, tips on gear and local stores.">
+    <meta name="author" content="Anastasiia Iurashchuk">
     <title>The Hague Runners | Local stores</title>
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="./js/scripts.js"></script>
   </head>
   
   <body>    
     
     <header>
 
+      <nav role="navigation" id="mobile-menu">        
+        <a><img id="menu-icon" src="./img/mobile-menu.svg" onclick="openMenu()" /></a>
+        <ul id="mobile-menu-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./run-in-the-hague.html">Where to Run</a></li>
+          <li><a href="./community.html">Community</a></li>
+          <li class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
+          <li class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
+          <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <section id="logo-header">
         <a href="./index.html"><img class="logo" src="./img/logo.svg" /></a>
-        <h1><a href="./index.html">The Hague Runners</a></h1>
+        <h1 id="website-name"><a href="./index.html">The Hague Runners</a></h1>
+        <h1 id="page-name"><a href="./index.html">Local Stores</a></h1>
       </section>
 
-      <ul id="nav-bar">
-        <li class="nav-tab"><a href="./index.html">Home</a></li>
-        <li class="nav-tab"><a href="./run-in-the-hague.html">Where to Run</a></li>
-        <li class="nav-tab"><a href="./community.html">Community</a></li>
-        <li class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
-        <li id="current-page" class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
-        <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
-      </ul>
+      <nav role="navigation" id="menu">        
+        <ul id="menu-links">
+          <li class="nav-tab"><a href="./index.html">Home</a></li>
+          <li class="nav-tab"><a href="./run-in-the-hague.html">Where to Run</a></li>
+          <li class="nav-tab"><a href="./community.html">Community</a></li>
+          <li class="nav-tab"><a href="./tips-on-gear.html">Tips on Gear</a></li>
+          <li id="current-page" class="nav-tab"><a href="./local-stores.html">Local Stores</a></li>
+          <li id="call-to-action" class="nav-tab"><a href="./contact.html">Contact</a></li>
+        </ul>        
+      </nav>
+
+      <a id="contact-icon-parent" href="./contact.html"><img id="contact-icon" src="./img/mobile-contact.svg" /></a>
+
+      <a id="close-icon-parent"><img id="close-icon" src="./img/mobile-cross.svg" onclick="closeMenu()" /></a>
       
     </header>
 
     <section id="content">
       
-      <section id="banner">
-        <img id="image-banner" src="./img/homepage-banner.jpg" />
-        <h1 id="heading-banner">
-          <span>Welcome to </span>
-          <span>The Hague Runners!</span>
-        </h1>
+      <h1 id="heading-1" class="h1-stores">Where to buy running gear in the Hague</h1>
+
+      <section class="content-container-stores">
+
+        <h2>De Hardloopwinkel</h2>
+        
+        <section class="content-stores">
+
+          <figure class="figure">
+            <img class="content-image stores-image" src="./img/stores-de-hardloopwinkel.jpg" alt="De Hardloopwinkel store in the Hague" title="De Hardloopwinkel store">
+            <figcaption>
+              <span>De Hardloopwinkel store</span>
+              <span class="store-link"><a href="http://maps.google.com/maps?q=De+Hardloopwinkel+Den+Haag&z=15" target="_blank">Schoolstraat 33, 2511 AW Den Haag</a></span>
+            </figcaption>
+          </figure>
+
+          <article class="content-text">
+            <p>
+              De Hardloopwinkel is more than just a store or a webshop; it's a community of passionate runners with over 25 years of combined experience in the running industry. 
+              Founded by Henri Jansen, a former employee at ASICS, and his wife Eva, the shop is driven by a team that truly cares about the runner's experience. 
+              Whether you're a beginner or a seasoned marathoner, their experts, including Frank who manages their webshop, are ready to offer personalized advice. 
+              Henri, Eva, and Frank are not just business owners; they're runners themselves who understand the joys and challenges of the sport. 
+              From financial administration to SEO challenges, the team does it all, even as they juggle their own busy lives filled with family, hobbies, and of course, running. 
+              With such genuine dedication to helping runners, De Hardloopwinkel is your go-to spot for not just gear, but also community and expert advice.
+            </p>
+          </article>
+
+        </section>
+
       </section>
 
-      <p id="p-intro">
-        This website is your comprehensive resource for running in the Hague. 
-        Whether you're looking for <a href="https://www.w3schools.com/" target="_blank">places to run</a>, join a local running community, 
-        or find specialized businesses that cater to your fitness needs, 
-        we're here to guide you every step of the way.
-      </p>
+      <section class="content-container-stores">
 
-      <section class="content-container">        
+        <h2>Decathlon</h2>
         
-        <img class="content-image" src="./img/homepage-image-content-1.jpg" />
+        <section class="content-stores">
 
-        <article class="content-text">
-          <h2>What is the Purpose of This Website?</h2>
-          <p>
-            The sole mission of "The Hague Runners" is to be your <em>ultimate guide for running</em> in The Hague. 
-            We aim to be your go-to informational hub for everything running-related in the city – 
-            from discovering local running places to offering tips on gear and safety. 
-            The website helps you to find local running groups and events to make it easier for runners to meet 
-            and share their experiences. Also, we provide information about local shops offering running gear.
-          </p>
-        </article>
+          <figure class="figure">
+            <img class="content-image stores-image" src="./img/stores-decathlon.jpg" alt="Decathlon store in the Hague" title="Decathlon store">
+            <figcaption>
+              <span>Decathlon store</span>
+              <span class="store-link"><a href="http://maps.google.com/maps?q=Decathlon+Den+Haag&z=15" target="_blank">Grote Marktstraat 54, 2511 BH Den Haag</a></span>
+            </figcaption>
+          </figure>
+
+          <article class="content-text">
+            <p>
+              Decathlon is a one-stop-shop for all your athletic needs, offering an extensive range of high-quality, affordable sports gear and equipment, including running essentials. 
+              Known for their in-house brands, Decathlon provides options for runners of all levels, from casual joggers to competitive athletes. 
+              The store prioritizes customer experience, featuring knowledgeable staff who are often sports enthusiasts themselves. 
+              Whether you're in need of new running shoes, apparel, or accessories like hydration packs, you'll find it all at Decathlon, 
+              making it a convenient destination for runners looking for both variety and value.
+            </p>
+          </article>
+
+        </section>
 
       </section>
 
-      <section class="content-container">        
-        
-        <img class="content-image" src="./img/homepage-image-content-2.jpg" />
+      <section class="content-container-stores">
 
-        <article class="content-text">
-          <h2>For Whom is This Website?</h2>
-          <p>
-            <span id="paragraph-1">
-            Whether you're a local or a visitor, a beginner or a marathon veteran, this website is for you. 
-            Here you'll find a community that understands your quest for that perfect run. 
-            If you're into health, fitness, socializing, or simply exploring the many facets of The Hague, 
-            we've got something that will make your runner's heart beat faster.
-            </span>
-            <span>So, <b>lace up your sneakers</b>, explore the site, and let "The Hague Runners" elevate your running game to the next level!</span>
-          </p>
-        </article>
+        <h2>Bever</h2>
+        
+        <section class="content-stores">
+
+          <figure class="figure">
+            <img class="content-image stores-image" src="./img/stores-bever.jpg" alt="Bever store in the Hague" title="Bever store">
+            <figcaption>
+              <span>Bever store</span>
+              <span class="store-link"><a href="http://maps.google.com/maps?q=Bever+Den+Haag&z=15" target="_blank">Grote Marktstraat 39, 2511 BH Den Haag</a></span>
+            </figcaption>
+          </figure>
+
+          <article class="content-text">
+            <p>
+              Bever is the go-to destination for outdoor enthusiasts, including runners who take their sport beyond the pavement. 
+              With a wide range of high-quality gear and apparel tailored for different types of outdoor activities, 
+              Bever offers specialized running equipment that's built to withstand the elements. 
+              Whether you're looking for trail running shoes, moisture-wicking clothing, or advanced GPS watches, 
+              Bever provides a curated selection of products designed for durability and performance. 
+              Knowledgeable staff are on hand to offer personalized advice, ensuring you find the right gear 
+              to enhance your running experience, no matter the terrain or weather conditions.
+            </p>
+          </article>
+
+        </section>
 
       </section>
 
@@ -107,6 +168,10 @@
         <li><a href="./run-in-the-hague.html">Places for running</a></li>
         <li><a href="./tips-on-gear.html">Tips on gear</a></li>
       </ul>
+
+      <section>
+        <p id="cookie">Cookie statement</p>
+      </section>
       
     </footer>
 
