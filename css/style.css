@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Cairo');
-@import url('https://fonts.googleapis.com/css?family=Nunito Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 /* PAGE SETTINGS
 ---------------------------------- */
@@ -18,7 +18,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  scrollbar-gutter: stable;
 }
 
 a {
