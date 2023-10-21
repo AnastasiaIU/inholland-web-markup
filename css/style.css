@@ -51,7 +51,7 @@ h2 {
   font-weight: bold;
 }
 
-p, li, th {
+p, li, th, legend, label, input, textarea {
   font-family: 'Nunito Sans', system-ui;
   font-size: 1rem;
 }
@@ -230,6 +230,12 @@ figcaption {
   #p-intro {
     width: 480px;
     margin: 48px auto;
+  }
+
+  #p-contact {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
   }
 
   #heading-1 {
@@ -431,6 +437,85 @@ figcaption {
     border-right: 1px solid white;
   }
 
+  #contacts {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+  }
+
+  #contact-form {
+    order: 1;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #BAC2D9;
+    border-radius: 4px;
+  }
+  
+  legend {
+    padding: 0 8px;
+  }
+
+  #our-contacts-form {
+    margin-right: 32px;
+  }
+
+  #our-contacts-form fieldset {
+    padding-right: 32px;
+  }
+
+  #our-contacts-form span {
+    display: block;
+  }
+
+  .contacts-strong {
+    margin-top: 32px;
+  }
+
+  .green-text span {
+    color: #6B7332;
+  }
+
+  #mrs, #other {
+    margin-left: 16px;
+  }
+
+  label[for='name'], label[for='email'], label[for='phone'], label[for='message'] {
+    margin-top: 16px;
+  }
+
+  input[type='radio'] {
+    accent-color: #6B7332;
+  }
+
+  input, textarea {
+    border: inset 1px #6B7332;
+    padding: 6px;
+  }
+
+  input[type='submit'] {
+    width: fit-content;
+    margin-top: 16px;
+    padding: 6px 24px;
+    color: white;
+    background-color: #6B7332;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type='text'], input[type='email'], input[type='tel'], textarea {
+    width: 286px;
+  }
+
+  textarea {
+    height: 160px;
+  }
+
+
   /* FOOTER
   ---------------------------------- */
   footer {
@@ -617,6 +702,10 @@ figcaption {
     z-index: 1;
   }
 
+  .content-contacts {
+    align-items: center;
+  }
+
   #banner {
     position: relative;
     width: 100%;
@@ -646,6 +735,12 @@ figcaption {
   #p-intro {
     max-width: 480px;
     margin: 48px 16px;
+  }
+
+  #p-contact {
+    max-width: fit-content;
+    margin: 0 16px;
+    text-align: center;
   }
 
   #heading-1 {
@@ -833,6 +928,88 @@ figcaption {
     border-right: 1px solid white;
   }
 
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 16px;
+  }
+
+  legend {
+    padding: 0 8px;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #BAC2D9;
+    border-radius: 4px;
+  }
+
+  #contact-form {
+    max-width: 332px;
+    margin-bottom: 32px;
+  }
+
+  #our-contacts-form {
+    width: 332px;
+    max-width: 332px;
+  }
+
+  #our-contacts-form fieldset {
+    padding-right: 32px;
+  }
+
+  #our-contacts-form span {
+    display: block;
+  }
+
+  .contacts-strong {
+    margin-top: 32px;
+  }
+
+  .green-text span {
+    color: #6B7332;
+  }
+
+  #mrs, #other {
+    margin-left: 16px;
+  }
+
+  label[for='name'], label[for='email'], label[for='phone'], label[for='message'] {
+    margin-top: 16px;
+  }
+
+  input[type='radio'] {
+    accent-color: #6B7332;
+  }
+
+  input, textarea {
+    border: inset 1px #6B7332;
+    padding: 6px;
+  }
+
+  input[type='submit'] {
+    width: fit-content;
+    margin-top: 16px;
+    padding: 6px 24px;
+    color: white;
+    background-color: #6B7332;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type='text'], input[type='email'], input[type='tel'], textarea {
+    width: 286px;
+    max-width: 286px;
+  }
+
+  textarea {
+    height: 160px;
+  }
+
   /* FOOTER
   ---------------------------------- */
   footer {
@@ -998,6 +1175,11 @@ figcaption {
     z-index: 1;
   }
 
+  .content-contacts {
+    align-items: center;
+    padding: 0 16px;
+  }
+
   #banner {
     display: flex;
     flex-direction: column;
@@ -1022,6 +1204,11 @@ figcaption {
 
   #p-intro {
     margin: 0 16px 32px 16px;
+  }
+
+  #p-contact {
+    max-width: fit-content;
+    text-align: center;
   }
 
   #heading-1 {
@@ -1186,6 +1373,93 @@ figcaption {
 
   th a {
     color: white;
+  }
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 32px 0;
+    width: 100%;
+  }
+
+  legend {
+    padding: 0 8px;
+    margin-left: 16px;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #BAC2D9;
+    border-radius: 4px;
+  }
+
+  #contact-form {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  #contact-form fieldset p {
+    margin: 16px 16px 0 16px;
+  }
+
+  #contact-form fieldset section {
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+
+  #our-contacts-form {
+    width: 100%;
+  }
+
+  #our-contacts-form fieldset {
+    padding: 16px 32px 16px 16px;
+  }
+
+  #our-contacts-form span {
+    display: block;
+  }
+
+  .contacts-strong {
+    margin-top: 32px;
+  }
+
+  .green-text span {
+    color: #6B7332;
+  }
+
+  #mrs, #other {
+    margin-left: 16px;
+  }
+
+  label[for='name'], label[for='email'], label[for='phone'], label[for='message'] {
+    margin: 16px 16px 0 16px;
+  }
+
+  input[type='radio'] {
+    accent-color: #6B7332;
+  }
+
+  input[type='submit'] {
+    width: fit-content;
+    margin: 16px;
+    padding: 6px 24px;
+    color: white;
+    background-color: #6B7332;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type='text'], input[type='email'], input[type='tel'], textarea {
+    margin: 0 16px;
+    border: inset 1px #6B7332;
+    padding: 6px;
+  }
+
+  textarea {
+    height: 160px;
   }
 
   /* FOOTER

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="running, the Hague, begginer, where to run, tips on running gear">
+    <meta name="description" content="Comprehensive resource for running in The Hague. Contains places to run, local running communities and events, tips on gear and local stores.">
     <meta name="author" content="Anastasiia Iurashchuk">
     <title>The Hague Runners | Contact</title>
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
@@ -29,7 +31,7 @@
       <section id="logo-header">
         <a href="./index.html"><img class="logo" src="./img/logo.svg" /></a>
         <h1 id="website-name"><a href="./index.html">The Hague Runners</a></h1>
-        <h1 id="page-name"><a href="./index.html">Home</a></h1>
+        <h1 id="page-name"><a href="./index.html">Contact</a></h1>
       </section>
 
       <nav role="navigation" id="menu">        
@@ -49,58 +51,62 @@
       
     </header>
 
-    <section id="content">
+    <section id="content" class="content-contacts">
       
-      <section id="banner">
-        <img id="image-banner" src="./img/homepage-banner.jpg" />
-        <h1 id="heading-banner">
-          <span>Welcome to </span>
-          <span>The Hague Runners!</span>
-        </h1>
-      </section>
+      <h1 id="heading-1">Get in touch</h1>
 
-      <section id="intro-text">
-        <p id="p-intro">
-          This website is your comprehensive resource for running in the Hague. 
-          Whether you're looking for <a href="./run-in-the-hague.html">places to run</a>, join a local running community, 
-          or find specialized businesses that cater to your fitness needs, 
-          we're here to guide you every step of the way.
-        </p>
-      </section>
+      <p id="p-contact">Want to get in touch? Fill the form and we will contact you as soon as possible.</p>
 
-      <section class="content-container">        
-        
-        <img class="content-image" src="./img/homepage-image-content-1.jpg" />
+      <section id="contacts">
 
-        <article class="content-text">
-          <h2>What is the Purpose of This Website?</h2>
-          <p>
-            The sole mission of "The Hague Runners" is to be your <em>ultimate guide for running</em> in The Hague. 
-            We aim to be your go-to informational hub for everything running-related in the city – 
-            from discovering local running places to offering tips on gear and safety. 
-            The website helps you to find local running groups and events to make it easier for runners to meet 
-            and share their experiences. Also, we provide information about local shops offering running gear.
-          </p>
-        </article>
+        <form id="contact-form" action="process.php" method="POST">
+          <fieldset>
+            <legend>Contact form:</legend>
 
-      </section>
+            <p class="green-text">Title:<span>*</span></p>
+            <section>
+              <input type="radio" id="mr" name="title" value="Mr." required>
+              <label for="mr">Mr.</label>            
+              <input type="radio" id="mrs" name="title" value="Mrs." required>
+              <label for="mrs">Mrs.</label>            
+              <input type="radio" id="other" name="title" value="Other" required checked>
+              <label for="other">Other</label>
+            </section>
+            
+            <label for="name" class="green-text">Name:<span>*</span></label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
 
-      <section class="content-container">        
-        
-        <img class="content-image" src="./img/homepage-image-content-2.jpg" />
+            <label for="email" class="green-text">Email:<span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="johndoe@mail.com" required>
 
-        <article class="content-text">
-          <h2>For Whom is This Website?</h2>
-          <p>
-            <span id="paragraph-1">
-            Whether you're a local or a visitor, a beginner or a marathon veteran, this website is for you. 
-            Here you'll find a community that understands your quest for that perfect run. 
-            If you're into health, fitness, socializing, or simply exploring the many facets of The Hague, 
-            we've got something that will make your runner's heart beat faster.
-            </span>
-            <span>So, <b>lace up your sneakers</b>, explore the site, and let "The Hague Runners" elevate your running game to the next level!</span>
-          </p>
-        </article>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="06 47 123 456">
+
+            <label for="message" class="green-text">Message:<span>*</span></label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+
+        <form id="our-contacts-form">
+          <fieldset>
+            <legend>Our contacts:</legend>
+
+            <p><strong>Phone number:</strong></p>
+            <p>+31 06 12345678</p>
+
+            <p class="contacts-strong"><strong>Email:</strong></p>
+            <p>abc@gmail.com</p>
+
+            <p class="contacts-strong"><strong>Address:</strong></p>
+            <p>
+              <span>Kerkstraat 462</span>
+              <span>1017 HZ Amsterdam</span>
+              <span>The Netherlands</span>
+            </p>
+          </fieldset>
+        </form>
 
       </section>
 
