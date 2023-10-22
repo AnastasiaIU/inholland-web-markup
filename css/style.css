@@ -59,6 +59,14 @@ th {
   font-weight: normal;
 }
 
+.h1-style {
+  font-family: 'Montserrat', system-ui;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 figcaption {
   font-family: 'Nunito Sans', system-ui;
   font-size: 0.75rem;
@@ -111,11 +119,11 @@ figcaption {
     vertical-align: bottom;
   }
 
-  #logo-header h1 {
+  #logo-header p {
     height: 100%;
   }
 
-  #logo-header > h1 > a {
+  #logo-header > p > a {
     font-size: 1rem;
     color: #A36650;
     margin-left: 16px;
@@ -263,7 +271,7 @@ figcaption {
     border-radius: 4px;
   }
   
-  aside h1 {
+  aside h2 {
     margin-bottom: 24px;
   }
 
@@ -537,11 +545,11 @@ figcaption {
     vertical-align: bottom;
   }
 
-  #logo-footer h1 {
+  #logo-footer p {
     height: 100%;
   }
 
-  #logo-footer > h1 > a {
+  #logo-footer > p > a {
     font-size: 0.75rem;
     color: #0A1829;
     margin-left: 8px;
@@ -577,7 +585,7 @@ figcaption {
 
   /* PAGE SETTINGS
   ---------------------------------- */
-  h1 {
+  h1, .h1-style {
     font-size: 1.25rem;
   }
 
@@ -613,11 +621,11 @@ figcaption {
     vertical-align: bottom;
   }
 
-  #logo-header h1 {
+  #logo-header p {
     height: 100%;
   }
 
-  #logo-header > h1 > a {
+  #logo-header > p > a {
     font-size: 1rem;
     color: #A36650;
     margin-left: 16px;
@@ -768,7 +776,7 @@ figcaption {
     border-radius: 4px;
   }
   
-  aside h1 {
+  aside h2 {
     margin-bottom: 24px;
   }
 
@@ -1031,11 +1039,11 @@ figcaption {
     vertical-align: bottom;
   }
 
-  #logo-footer h1 {
+  #logo-footer p {
     height: 100%;
   }
 
-  #logo-footer > h1 > a {
+  #logo-footer > p > a {
     font-size: 0.75rem;
     color: #0A1829;
     margin-left: 8px;
@@ -1071,7 +1079,7 @@ figcaption {
 
   /* PAGE SETTINGS
   ---------------------------------- */
-  h1 {
+  h1, .h1-style {
     font-size: 1.25rem;
   }
 
@@ -1194,7 +1202,7 @@ figcaption {
 
   #heading-banner {
     text-align: center;
-    margin: 16px 0;
+    margin: 16px;
   }
 
   #heading-banner span {
@@ -1212,7 +1220,7 @@ figcaption {
 
   #heading-1 {
     text-align: center;
-    margin: 32px 0 24px 0;
+    margin: 32px 16px 24px 16px;
   }
 
   #heading-1.h1-stores {
@@ -1239,8 +1247,13 @@ figcaption {
     border-radius: 4px;
   }
   
-  aside h1 {
-    margin-bottom: 24px;
+  aside h2 {
+    margin: 0 auto 24px auto;
+  }
+
+  ol {
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .content-container {
@@ -1482,11 +1495,11 @@ figcaption {
     margin-right: 8px;
   }
 
-  #logo-footer h1 {
+  #logo-footer p {
     height: 100%;
   }
 
-  #logo-footer > h1 > a {
+  #logo-footer > p > a {
     font-size: 0.75rem;
     color: #0A1829;
     text-decoration: none;
