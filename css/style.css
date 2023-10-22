@@ -393,7 +393,7 @@ figcaption {
     width: 100%;
   }
 
-  #heading-2 {
+  .heading-2 {
     text-align: center;
     margin-bottom: 32px;
   }
@@ -884,7 +884,7 @@ figcaption {
     width: 100%;
   }
 
-  #heading-2 {
+  .heading-2 {
     text-align: center;
     margin-bottom: 32px;
   }
@@ -1355,7 +1355,7 @@ figcaption {
     width: 100%;
   }
 
-  #heading-2 {
+  .heading-2 {
     text-align: center;
     margin-bottom: 24px;
   }
@@ -1373,18 +1373,17 @@ figcaption {
     width: 100%;
   }
 
-  thead tr th {
+  .mobile-table-head {
     background-color: #6B7332;
+  }
+
+  .mobile-table-head th, .mobile-table-head a {
     color: white;
   }
 
   th {
     text-align: left;
     padding: 8px;
-  }
-
-  th a {
-    color: white;
   }
 
   #contacts {
