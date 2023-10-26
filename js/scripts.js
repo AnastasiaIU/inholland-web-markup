@@ -5,8 +5,10 @@ function openMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
     const pageName = document.getElementById("page-name");
     const contactIconParent = document.getElementById("contact-icon-parent");
-    const closeIconParent = document.getElementById("close-icon-parent");
+    const closeIcon = document.getElementById("close-icon");
     const header = document.getElementsByTagName("header")[0];
+    const main = document.getElementsByTagName("main")[0];
+    const footer = document.getElementsByTagName("footer")[0];
     
     menuIcon.style.display = "none";
 
@@ -19,10 +21,13 @@ function openMenu() {
 
     contactIconParent.style.display = "none";
 
-    closeIconParent.style.display = "block";
+    closeIcon.style.display = "block";
 
     header.style.display = "grid";
     header.style.height = "100vh";
+
+    main.style.display = "none";
+    footer.style.display = "none";
 }
 
 function closeMenu() {
@@ -32,9 +37,11 @@ function closeMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
     const pageName = document.getElementById("page-name");
     const contactIconParent = document.getElementById("contact-icon-parent");
-    const closeIconParent = document.getElementById("close-icon-parent");
+    const closeIcon = document.getElementById("close-icon");
     const header = document.getElementsByTagName("header")[0];
-    
+    const main = document.getElementsByTagName("main")[0];
+    const footer = document.getElementsByTagName("footer")[0];
+
     menuIcon.style.display = "block";
 
     mobileMenu.style.order = "0";
@@ -46,8 +53,11 @@ function closeMenu() {
 
     contactIconParent.style.display = "block";
 
-    closeIconParent.style.display = "none";
+    closeIcon.style.display = "none";
 
     header.style.display = "flex";
     header.style.height = "auto";
+
+    main.style.display = "flex";
+    footer.style.display = "grid";
 }

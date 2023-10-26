@@ -199,7 +199,7 @@ figcaption {
     display: none;
   }
 
-  #close-icon-parent {
+  #close-icon {
     display: none;
   }
 
@@ -697,7 +697,7 @@ figcaption {
     display: none;
   }
 
-  #close-icon-parent {
+  #close-icon {
     display: none;
   }
 
@@ -1087,7 +1087,7 @@ figcaption {
   ---------------------------------- */
   header {
     display: flex;
-    grid-template: min-content auto / auto auto;
+    grid-template: min-content auto / auto min-content;
     justify-items: flex-start;
     align-items: flex-start;
     position: sticky;
@@ -1168,8 +1168,9 @@ figcaption {
     margin-left: auto;
   }
 
-  #close-icon-parent {
+  #close-icon {
     display: none;
+    width: fit-content;
     margin-top: 16px;
     margin-left: auto;
   }
