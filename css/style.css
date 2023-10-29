@@ -162,6 +162,10 @@ figcaption {
     padding: 0 16px;
   }
 
+  .nav-tab a::first-letter {
+    text-transform: uppercase;
+  }
+
   .nav-tab:hover {
     border-color: #8C8988;
   }
@@ -207,10 +211,6 @@ figcaption {
   ---------------------------------- */
   #content {
     z-index: 1;
-  }
-
-  #content p::first-letter {
-    text-transform: uppercase;
   }
 
   #banner {
@@ -522,7 +522,6 @@ figcaption {
     height: 160px;
   }
 
-
   /* FOOTER
   ---------------------------------- */
   footer {
@@ -658,6 +657,10 @@ figcaption {
     color: #0A1829;
     text-decoration: none;
     padding: 0 16px;
+  }
+
+  .nav-tab a::first-letter {
+    text-transform: uppercase;
   }
 
   .nav-tab:hover {
@@ -873,6 +876,10 @@ figcaption {
   }
 
   #video-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 480px;
     margin: 0 16px 32px 16px;
   }
 

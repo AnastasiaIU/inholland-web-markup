@@ -1,0 +1,5 @@
+Student name: Sia Iurashchuk 
+Student number: 713956
+Student class: IT1B
+GitHub Repository: https://github.com/AnastasiaIU/inholland-web-markup
+GitHub Pages URL: https://anastasiaiu.github.io/inholland-web-markup/
